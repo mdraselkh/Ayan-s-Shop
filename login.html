@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+
+    <header class="section-navbar">
+
+        <section class="top_txt">
+            <div class="head container">
+              <div class="head_txt">
+                <p>Call Us (Order): 022355-511166
+                </p>
+              </div>
+              <div class="sing_in_up">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </section>
+        
+        <div class="container" style="position: sticky; top: 0;">
+          <div class="logo_txt">
+            <h1>Ayan's <span>Shop</span></h1>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="products.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="addToCart.html"
+                  class="nav-link add-to-cart-button"
+                  id="cartValue"
+                >
+                  <i class="fa-solid fa-cart-shopping">0</i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+   
+    <!-- Login -->
+    <div class="container">
+      <div class="login-form">
+        <form action="">
+          <h1>Login</h1>
+          <p>
+            Already have an account? Login in or
+            <a href="signup.html">Sign Up</a>
+          </p>
+
+          <label for="email">Email</label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label for="psw-repeat">Repeat Password</label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            required
+          />
+
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
+          </label>
+
+          <p>
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+
+          <div class="hero-btn">
+            <a href="#" class="btn">Cancel</a>
+            <a href="#" class="btn">Login</a>
+         </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="section-footer">
+        <div class="footer-container container">
+          <div class="content_1">
+             <div class="logo_txt">
+                <h1  style="color: white;">Ayan's <span>Shop</span></h1>
+              </div>
+              <p>
+                Welcome to Ayan's Shop for finding your desired clothes for your babies.
+              </p>
+              <img src="./public/images/cards.png" alt="">
+          </div>
+          <div class="content_2">
+              <h4>SHOPPING</h4>
+              <a href="#">Baby Sets</a>
+              <a href="#">Baby Pajamas</a>
+              <a href="#">Baby Gear</a>
+              <a href="#">Accessories</a>
+          </div>
+          <div class="content_3">
+             <h4>Experience</h4>
+             <a href="./contact.html">Contact Us</a>
+             <a href="" target="_blank">Payment Method</a>
+             <a href="" target="_blank">Delivery</a>
+             <a href="" target="_blank">Return and Exchange</a>
+         </div>
+         <div class="content_4">
+          <h4>NEWSLETTER</h4>
+          <p>Be the first to know about new<br/> arrivals, sales and promos!</p>
+          <div class="f-mail">
+              <input type="email" placeholder="Your Email">
+              <i class="bx bx-envelope"></i>
+          </div>
+          <hr/>
+         </div>
+        </div>
+        <div class="f-design">
+           <div class="f-design-txt">
+              <p>All Right Reserved@2024</p>
+           </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Custom Script -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

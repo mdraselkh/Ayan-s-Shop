@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayan's Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund gaurantee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="login.html">SIGN IN</a>
+            <a href="signup.html">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container" style="position: sticky; top: 0;">
+        <div class="logo_txt" style="cursor: pointer;">
+          <h1>Ayan's <span>Shop</span></h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="addToCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="fa-solid fa-cart-shopping">0</i>
+            
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main >
+      <section class="section-hero">
+          <div class="container grid grid-two--cols">
+            <div class="section-hero--content">
+              <p class="hero-subheading">Explore our latest Baby Clothes</p>
+              <h1 class="hero-heading">
+               Your Destination For beautiful Clothes!
+              </h1>
+              <p class="hero-para">
+               Buy trending and new collection of baby boys and baby girls clothes with discount price for limited time.
+              </p>
+              <div class="hero-btn">
+                 <a href="products.html" class="btn">Explore Our Products</a>
+              </div>
+            </div> 
+            <div class="section-hero-image">
+                <img src="./public/images/mainbg-img.png" alt="">
+            </div>
+          </div>
+      </section>
+    </main>
+    <section class="section-extra-product">
+      <div class="container grid grid-three--cols">
+         <div class="div-extra grid grid-two--cols">
+            <div class="extra-text">
+              <p>New Year Sale</p>
+              <h3>Get and extra 50% off</h3>
+              <a href="#">Shop now</a>
+            </div>
+            <div class="extra-img extra-cloth">
+               <img src="./public//images/offer-img1.jpg" alt="">
+            </div>
+         </div>
+         <div class="div-extra grid grid-two--cols">
+            <div class="extra-text">
+              <p>New Year Sale</p>
+              <h3>Get and extra 50% off</h3>
+              <a href="#">Shop now</a>
+            </div>
+            <div class="extra-img extra-cloth">
+               <img src="./public//images/offer-img2.jpg" alt="">
+            </div>
+         </div>
+         <div class="div-extra grid grid-two--cols">
+            <div class="extra-text">
+              <p>New Year Sale</p>
+              <h3>Get and extra 50% off</h3>
+              <a href="#">Shop now</a>
+            </div>
+            <div class="extra-img extra-cloth">
+               <img src="./public//images/offer-img3.jpg" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section-products">
+      <div class="heading">
+         <h2 class="section-common-heading"> Checkout Ayan's Baby Clothes</h2>
+      </div>
+      <section class="container">
+         <div id="productContainer">
+
+         </div>
+         <div style="margin-top: 30px; text-align: center;">
+            <div class="hero-btn">
+               <a href="products.html" class="btn">See More</a>
+            </div>
+         </div>
+      </section>
+      
+   </section>
+
+   <template id="productTemplate"> 
+      <div class="cards" id="cardValue">
+           <article class="information [card]">
+                 <span class="category"></span>
+                 <div class="imageContainer">
+                   <img src="" alt="" class="productImage">
+                 </div>
+                 <h2 class="productName"></h2>
+
+                 <div class="productRating">
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                 </div>
+                 <p class="productDescription">
+
+                 </p>
+                 <div class="productPriceElement">
+                   <p class="productPrice"></p>
+                   <p class="productActualPrice"></p>
+                 </div>
+
+                 <div class="productStockElement">
+                     <p class="productProperty">Total Stocks Available:</p>
+                     <p class="productStock"></p>
+                 </div>
+
+                 <div class="productQuantityElement">
+                   <p class="productProperty">Quantity(Pieces)</p>
+                   <div class="stockElement">
+                     <button class="cartIncrement">+</button>
+                     <p class="productQuantity">1</p>
+                     <button class="cartDecrement">-</button>
+
+                   </div>
+                 </div>
+
+                 <button class="add-to-cart-button">
+                     <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                 </button>
+
+           </article>
+      </div>
+   </template>
+
+   <section class="section-policy">
+      <div class="heading">
+         <h2 class="section-common-heading"> Why Choose Us?</h2>
+      </div>
+     <div class="container grid grid-four--cols" style="margin-top: 5rem;">
+         <div class="div-policy">
+             <div class="icons">
+               <i class="fa-solid fa-truck-fast"></i>
+             </div>
+             <div class="div-policy-text">
+                <p>Worldwide shipping</p>
+                <p>
+                  order above $100
+                </p>
+             </div>
+         </div>
+         <div class="div-policy">
+            <div class="icons">
+              <i class="fa-solid fa-rotate"></i>
+            </div>
+            <div class="div-policy-text">
+               <p>Easy 30 Day Returns</p>
+               <p>
+                 Back Returns in 7 Days
+               </p>
+            </div>
+        </div>
+        <div class="div-policy">
+         <div class="icons">
+           <i class="fa-solid fa-hand-holding-dollar"></i>
+         </div>
+         <div class="div-policy-text">
+            <p>Money back gaurantee</p>
+            <p>
+              gaurantee with in 30-Days
+            </p>
+         </div>
+     </div>
+     <div class="div-policy">
+      <div class="icons">
+        <i class="fa-solid fa-headset"></i>
+      </div>
+      <div class="div-policy-text">
+         <p>Easy Online Support</p>
+         <p>
+           24/7 Any Time Support
+         </p>
+      </div>
+  </div>
+     </div>
+   </section>
+
+   <footer class="section-footer">
+       <div class="footer-container container">
+         <div class="content_1">
+            <div class="logo_txt">
+               <h1  style="color: white;">Ayan's <span>Shop</span></h1>
+             </div>
+             <p>
+               Welcome to Ayan's Shop for finding your desired clothes for your babies.
+             </p>
+             <img src="./public/images/cards.png" alt="">
+         </div>
+         <div class="content_2">
+             <h4>SHOPPING</h4>
+             <a href="#">Baby Sets</a>
+             <a href="#">Baby Pajamas</a>
+             <a href="#">Baby Gear</a>
+             <a href="#">Accessories</a>
+         </div>
+         <div class="content_3">
+            <h4>Experience</h4>
+            <a href="./contact.html">Contact Us</a>
+            <a href="" target="_blank">Payment Method</a>
+            <a href="" target="_blank">Delivery</a>
+            <a href="" target="_blank">Return and Exchange</a>
+        </div>
+        <div class="content_4">
+         <h4>NEWSLETTER</h4>
+         <p>Be the first to know about new<br/> arrivals, sales and promos!</p>
+         <div class="f-mail">
+             <input type="email" placeholder="Your Email">
+             <i class="bx bx-envelope"></i>
+         </div>
+         <hr/>
+        </div>
+       </div>
+       <div class="f-design">
+          <div class="f-design-txt">
+             <p>All Right Reserved@2024</p>
+          </div>
+       </div>
+   </footer>
+
+   <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name": "Baby Toy - Koala",
+        "category": "Baby Toy",
+        "price": 80,
+        "stock": 50,
+        "description": "Baby Bandana Buddies Chime & Teethe",
+        "image": "/images/cartimg1.jpg"
+
+    },
+    {
+        "id": 2,
+        "name": "Baby Giraffe",
+        "category": "Baby Toy",
+        "price": 95,
+        "stock": 30,
+        "description": "Baby Giraffe Bandana Buddies Baby Activity Toy",
+        "image": "/images/cartimg2.jpg"
+
+    },
+    {
+        "id": 3,
+        "name": "Hoodie",
+        "category": "Baby Boy Jackets & Outerwear",
+        "price": 450,
+        "stock": 50,
+        "description": "Baby Zip-Up French Terry Hoodie",
+        "image": "/images/cartimg3.jpg"
+
+    },
+    {
+        "id": 4,
+        "name": "Baby 2-Piece",
+        "category": "Baby Boy Sets",
+        "price": 580,
+        "stock": 50,
+        "description": "Baby 2-Piece Polo Bodysuit & Plaid Short Set",
+        "image": "/images/cartimg4.jpg"
+
+    },
+    {
+        "id": 5,
+        "name": "Baby 3-Piece",
+        "category": "Baby Boy Sets",
+        "price": 999,
+        "stock": 100,
+        "description": "Baby 3-Piece Dress Me Up Set",
+        "image": "/images/cartimg5.jpg"
+
+    },
+    {
+        "id": 6,
+        "name": "Flutter Romper",
+        "category": "Dresses & Rompers",
+        "price": 499,
+        "stock": 50,
+        "description": "Palm Tree Flutter Romper for Girls Baby",
+        "image": "/images/offer-img2.jpg"
+
+    }
+
+]
